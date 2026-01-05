@@ -42,7 +42,7 @@ export default function Services() {
 
   return (
     <section id="services" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
             Our Services
@@ -59,8 +59,8 @@ export default function Services() {
               key={index}
               className="group bg-white rounded-2xl border border-gray-200 p-8 hover:border-green-300 hover:shadow-xl transition-all"
             >
-              <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${service.color} text-white mb-6 group-hover:scale-110 transition-transform`}>
-                <service.icon size={28} />
+              <div className="mb-6 group-hover:scale-110 transition-transform">
+                <service.icon size={48} className="text-green-700" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>

@@ -1,24 +1,27 @@
 import { Search, ArrowDown, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
+import heroBusiness from '../Assets/hero-business.png';
+import heroJobs from '../Assets/hero-jobs.png';
+import heroTech from '../Assets/hero-tech.png';
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1000',
+      image: heroBusiness,
       title: 'Empower Your Business',
       subtitle: 'Access funding, training, and mentorship to scale your venture',
       cta: 'Explore Programs',
     },
     {
-      image: 'https://images.pexels.com/photos/3182757/pexels-photo-3182757.jpeg?auto=compress&cs=tinysrgb&w=1000',
+      image: heroJobs,
       title: 'Create Sustainable Jobs',
       subtitle: 'Join thousands of entrepreneurs creating employment in Katsina State',
       cta: 'Learn More',
     },
     {
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1000',
+      image: heroTech,
       title: 'Transform Your Industry',
       subtitle: 'Support for agribusiness, manufacturing, and digital enterprises',
       cta: 'Get Started',
@@ -51,7 +54,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
 
             <div className="absolute inset-0 flex flex-col justify-center items-start">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+              <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
                   {slide.title}
                 </h1>
@@ -93,7 +96,7 @@ export default function Hero() {
       </div>
 
       <div className="bg-gradient-to-b from-gray-900 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 -mt-8 relative z-10">
             <h2 className="text-gray-900 text-xl font-bold mb-4">What can we help you with?</h2>
             <div className="flex flex-col md:flex-row gap-4">

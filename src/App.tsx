@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Services from './components/Services';
+import EServices from './components/EServices';
 import News from './components/News';
 import About from './components/About';
 import CTA from './components/CTA';
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Stats />
       <Services />
+      <EServices />
       <News />
       <About />
       <CTA />

@@ -1,37 +1,36 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Clock, Globe } from 'lucide-react';
+import logo from '../Assets/logo.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer id="contact" className="bg-gradient-to-b from-gray-900 to-black text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 py-16 border-b border-gray-800">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center text-white font-bold text-lg">
-                K
-              </div>
+              <img src={logo} alt="KASEDA" className="w-12 h-12 object-contain" />
               <div>
                 <div className="font-bold text-lg text-white">KASEDA</div>
-                <div className="text-xs text-gray-400">Katsina State</div>
+                <div className="text-xs text-gray-400">Katsina State Government</div>
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-6 text-gray-400">
               Driving economic growth and sustainable development across Katsina State through innovative programs and strategic partnerships.
             </p>
             <div className="flex gap-2">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors hover:text-white">
-                <Facebook size={18} />
+              <a href="#" className="w-10 h-10 flex items-center justify-center text-green-700 hover:text-green-500 transition-colors">
+                <Facebook size={24} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors hover:text-white">
-                <Twitter size={18} />
+              <a href="#" className="w-10 h-10 flex items-center justify-center text-green-700 hover:text-green-500 transition-colors">
+                <Twitter size={24} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors hover:text-white">
-                <Linkedin size={18} />
+              <a href="#" className="w-10 h-10 flex items-center justify-center text-green-700 hover:text-green-500 transition-colors">
+                <Linkedin size={24} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors hover:text-white">
-                <Instagram size={18} />
+              <a href="#" className="w-10 h-10 flex items-center justify-center text-green-700 hover:text-green-500 transition-colors">
+                <Instagram size={24} />
               </a>
             </div>
           </div>
@@ -72,7 +71,7 @@ export default function Footer() {
                 <Mail size={16} className="flex-shrink-0 text-green-400 mt-0.5" />
                 <div>
                   <div className="text-gray-400">Email</div>
-                  <div className="text-white font-semibold">info@kaseda.gov.ng</div>
+                  <div className="text-white font-semibold">info@kasedaktsg.com</div>
                 </div>
               </li>
             </ul>
@@ -101,7 +100,7 @@ export default function Footer() {
 
         <div className="py-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-center md:text-left text-gray-500">
-            {currentYear} Katsina State Economic Development Agency (KASEDA). All rights reserved.
+            {currentYear} Katsina State Entrepreneurship Development Agency (KASEDA). All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="hover:text-green-400 transition-colors text-gray-500">Privacy Policy</a>

@@ -1,5 +1,6 @@
 import { Menu, X, Phone, Mail, MapPin, Search } from 'lucide-react';
 import { useState } from 'react';
+import logo from '../Assets/logo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,7 +8,7 @@ export default function Header() {
   return (
     <>
       <div className="bg-gradient-to-r from-green-800 to-green-900 text-white py-2 px-4 text-sm">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+        <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1">
               <Phone size={14} />
@@ -15,7 +16,7 @@ export default function Header() {
             </div>
             <div className="hidden sm:flex items-center gap-1">
               <Mail size={14} />
-              <span>info@kaseda.gov.ng</span>
+              <span>info@kasedaktsg.com</span>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -25,17 +26,15 @@ export default function Header() {
       </div>
 
       <header className="bg-white shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-4 flex-1">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-lg flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-2xl">K</span>
-                </div>
+                <img src={logo} alt="KASEDA Logo" className="h-14 w-auto object-contain" />
               </div>
               <div className="hidden sm:block">
-                <div className="font-bold text-lg text-gray-900">KASEDA</div>
-                <div className="text-xs text-gray-600">Katsina State Economic Development Agency</div>
+                <div className="font-bold text-lg text-gray-900 leading-tight">Katsina State Entrepreneurship Development Agency</div>
+                <div className="text-xs text-gray-600 font-medium">Katsina State Government</div>
               </div>
             </div>
 
