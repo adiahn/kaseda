@@ -8,7 +8,7 @@ export default function CTA() {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold mb-4">
             Take Action Today

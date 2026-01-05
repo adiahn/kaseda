@@ -49,14 +49,14 @@ export default function About() {
             <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-6">
               Our Foundation
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Vision & Mission
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
               The Katsina State Entrepreneurship Development Agency (KASEDA) is the premier government institution dedicated to fostering economic growth, supporting businesses, and creating sustainable employment opportunities across the state.
             </p>
             
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
                   <Eye className="w-8 h-8 text-green-700" />

@@ -28,9 +28,9 @@ export default function Header() {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center gap-4 flex-1">
+            <div className="flex items-center gap-3 sm:gap-4 flex-1">
               <div className="flex-shrink-0">
-                <img src={logo} alt="KASEDA Logo" className="h-14 w-auto object-contain" />
+                <img src={logo} alt="KASEDA Logo" className="h-10 sm:h-12 lg:h-16 w-auto object-contain transition-all" />
               </div>
               <div className="hidden sm:block">
                 <div className="font-bold text-lg text-gray-900 leading-tight">Katsina State Entrepreneurship Development Agency</div>
@@ -62,9 +62,6 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <button className="hidden md:flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-green-700 transition-colors">
                 <Search size={18} />
-              </button>
-              <button className="hidden md:block px-6 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors font-semibold text-sm">
-                Register
               </button>
 
               <button
@@ -98,9 +95,6 @@ export default function Header() {
               <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-green-700 hover:bg-green-50 rounded font-medium">
                 Contact
               </a>
-              <button className="w-full mt-4 px-6 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors font-semibold">
-                Register Now
-              </button>
             </nav>
           </div>
         )}

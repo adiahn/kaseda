@@ -55,15 +55,20 @@ export default function Hero() {
 
             <div className="absolute inset-0 flex flex-col justify-center items-start">
               <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight max-w-4xl">
                   {slide.title}
                 </h1>
-                <p className="text-lg sm:text-xl text-gray-100 mb-8 max-w-2xl">
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-2xl leading-relaxed">
                   {slide.subtitle}
                 </p>
-                <button className="px-8 py-4 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-all font-semibold shadow-lg">
-                  {slide.cta}
-                </button>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <button className="px-8 py-3 sm:py-4 bg-green-700 hover:bg-green-800 text-white rounded-lg font-bold text-base sm:text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-green-900/50 w-full sm:w-auto text-center">
+                    {slide.cta}
+                  </button>
+                  <button className="px-8 py-3 sm:py-4 bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md rounded-lg font-bold text-base sm:text-lg transition-all w-full sm:w-auto text-center">
+                    Learn More
+                  </button>
+                </div>
               </div>
             </div>
           </div>
