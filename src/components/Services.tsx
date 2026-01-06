@@ -60,7 +60,7 @@ export default function Services() {
               className="group bg-white rounded-2xl border border-gray-200 p-8 hover:border-green-300 hover:shadow-xl transition-all"
             >
               <div className="mb-6 group-hover:scale-110 transition-transform">
-                <service.icon size={48} className="text-green-700" />
+                <service.icon size={40} className="text-green-700" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>

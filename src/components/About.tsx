@@ -102,7 +102,7 @@ export default function About() {
                 className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:border-green-200 hover:shadow-xl transition-all group"
               >
                 <div className="mb-6 group-hover:scale-110 transition-transform">
-                  <mandate.icon size={48} className="text-green-700" />
+                  <mandate.icon size={40} className="text-green-700" />
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-3">{mandate.title}</h4>
                 <p className="text-gray-600 leading-relaxed">{mandate.description}</p>

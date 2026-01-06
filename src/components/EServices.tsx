@@ -59,12 +59,12 @@ export default function EServices() {
               className="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:border-green-200 transition-all group relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                <portal.icon size={120} className="text-green-700 -mr-8 -mt-8" />
+                <portal.icon size={100} className="text-green-700 -mr-8 -mt-8" />
               </div>
               
               <div className="flex justify-between items-start mb-6">
                 <div className="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center text-green-700 group-hover:bg-green-700 group-hover:text-white transition-colors">
-                  <portal.icon size={24} />
+                  <portal.icon size={20} />
                 </div>
                 <span className="px-3 py-1 bg-green-50 text-green-700 text-xs font-semibold rounded-full border border-green-100">
                   {portal.status}

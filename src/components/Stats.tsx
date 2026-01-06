@@ -47,7 +47,7 @@ export default function Stats() {
               className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border border-gray-100 hover:border-green-200"
             >
               <div className="mb-6 group-hover:scale-110 transition-transform">
-                <stat.icon size={48} className="text-green-700" />
+                <stat.icon size={40} className="text-green-700" />
               </div>
               <div className="text-4xl font-bold text-gray-900 mb-2">{stat.value}</div>
               <div className="text-lg font-semibold text-gray-800 mb-1">{stat.label}</div>

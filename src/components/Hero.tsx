@@ -1,27 +1,27 @@
 import { Search, ArrowDown, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
-import heroBusiness from '../Assets/hero-business.png';
-import heroJobs from '../Assets/hero-jobs.png';
-import heroTech from '../Assets/hero-tech.png';
+import bg1 from '../Assets/bg1.jpeg';
+import bg2 from '../Assets/bg2.jpeg';
+import bg3 from '../Assets/bg3.jpeg';
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const slides = [
     {
-      image: heroBusiness,
+      image: bg1,
       title: 'Empower Your Business',
       subtitle: 'Access funding, training, and mentorship to scale your venture',
       cta: 'Explore Programs',
     },
     {
-      image: heroJobs,
+      image: bg2,
       title: 'Create Sustainable Jobs',
       subtitle: 'Join thousands of entrepreneurs creating employment in Katsina State',
       cta: 'Learn More',
     },
     {
-      image: heroTech,
+      image: bg3,
       title: 'Transform Your Industry',
       subtitle: 'Support for agribusiness, manufacturing, and digital enterprises',
       cta: 'Get Started',
