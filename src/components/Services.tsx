@@ -44,9 +44,6 @@ export default function Services() {
     <section id="services" className="py-20 bg-white">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
-            Our Services
-          </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Services to Drive Your Success</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive support programs designed to help entrepreneurs and businesses thrive across all sectors

@@ -1,6 +1,11 @@
+
 import { ArrowRight, FileText, PhoneCall, Zap } from 'lucide-react';
+import { useState } from 'react';
+import AppointmentModal from './AppointmentModal';
 
 export default function CTA() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="py-20 bg-gradient-to-br from-green-700 via-green-800 to-green-900 text-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
@@ -10,9 +15,6 @@ export default function CTA() {
 
       <div className="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold mb-4">
-            Take Action Today
-          </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">Ready to Grow Your Business?</h2>
           <p className="text-xl text-green-100 max-w-2xl mx-auto">
             Join thousands of entrepreneurs who have transformed their ventures with KASEDA's comprehensive support programs
@@ -28,10 +30,15 @@ export default function CTA() {
             <p className="text-green-100 mb-6 leading-relaxed">
               Get your business officially registered and unlock access to all KASEDA support programs.
             </p>
-            <button className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group">
+            <a 
+              href="https://www.kasedacertificate.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group"
+            >
               Start Registration
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
 
           <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all border border-white/20 hover:border-white/40">
@@ -42,7 +49,10 @@ export default function CTA() {
             <p className="text-green-100 mb-6 leading-relaxed">
               Speak with our expert advisors to find the perfect program tailored to your business needs.
             </p>
-            <button className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group">
+            <button 
+              onClick={() => setIsModalOpen(true)}
+              className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group"
+            >
               Book Appointment
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
@@ -56,10 +66,15 @@ export default function CTA() {
             <p className="text-green-100 mb-6 leading-relaxed">
               Access grants, loans, and investment opportunities to accelerate your business growth.
             </p>
-            <button className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group">
+            <a 
+              href="https://loan.kasedaktsg.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group"
+            >
               Explore Funding
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
 
@@ -72,6 +87,8 @@ export default function CTA() {
           </button>
         </div>
       </div>
+
+      <AppointmentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

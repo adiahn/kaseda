@@ -1,7 +1,7 @@
 import { Search, ArrowDown, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import bg1 from '../Assets/bg1.jpeg';
-import bg2 from '../Assets/bg2.jpeg';
+import bg5 from '../Assets/bg5.jpeg';
 import bg3 from '../Assets/bg3.jpeg';
 
 export default function Hero() {
@@ -15,7 +15,7 @@ export default function Hero() {
       cta: 'Explore Programs',
     },
     {
-      image: bg2,
+      image: bg5,
       title: 'Create Sustainable Jobs',
       subtitle: 'Join thousands of entrepreneurs creating employment in Katsina State',
       cta: 'Learn More',

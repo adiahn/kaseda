@@ -1,5 +1,6 @@
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Clock, Globe } from 'lucide-react';
-import logo from '../Assets/logo.png';
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import logo from '../Assets/logowhite.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 py-12 lg:py-16 border-b border-gray-800">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src={logo} alt="KASEDA" className="w-12 h-12 object-contain" />
+              <img src={logo} alt="KASEDA" className="w-20 h-20 object-contain" />
               <div>
                 <div className="font-bold text-lg text-white">KASEDA</div>
                 <div className="text-xs text-gray-400">Katsina State Government</div>
@@ -38,11 +39,12 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-sm mb-6 uppercase tracking-wide">Navigation</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#home" className="hover:text-green-400 transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-green-400 transition-colors">About Us</a></li>
-              <li><a href="#services" className="hover:text-green-400 transition-colors">Services</a></li>
-              <li><a href="#news" className="hover:text-green-400 transition-colors">News</a></li>
-              <li><a href="#contact" className="hover:text-green-400 transition-colors">Contact</a></li>
+              <li><Link to="/" className="hover:text-green-400 transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-green-400 transition-colors">About Us</Link></li>
+              <li><Link to="/programs" className="hover:text-green-400 transition-colors">Programs</Link></li>
+              <li><Link to="/services" className="hover:text-green-400 transition-colors">Services</Link></li>
+              <li><Link to="/news" className="hover:text-green-400 transition-colors">News</Link></li>
+              <li><Link to="/contact" className="hover:text-green-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -64,7 +66,7 @@ export default function Footer() {
                 <Phone size={16} className="flex-shrink-0 text-green-400 mt-0.5" />
                 <div>
                   <div className="text-gray-400">Main Line</div>
-                  <div className="text-white font-semibold">+234 (0)803 XXX XXXX</div>
+                  <div className="text-white font-semibold">+234707 999 4928</div>
                 </div>
               </li>
               <li className="flex gap-2">

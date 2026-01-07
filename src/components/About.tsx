@@ -1,4 +1,5 @@
 import { Target, Eye, Rocket, TrendingUp, HandCoins, Globe, FileText } from 'lucide-react';
+import bg2 from '../Assets/bg2.jpeg';
 
 export default function About() {
   const mandates = [
@@ -35,7 +36,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="relative order-2 lg:order-1">
             <img
-              src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={bg2}
               alt="KASEDA team"
               className="rounded-3xl shadow-2xl object-cover w-full h-[500px]"
             />
@@ -46,9 +47,7 @@ export default function About() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-6">
-              Our Foundation
-            </div>
+
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Vision & Mission
             </h2>
@@ -86,9 +85,7 @@ export default function About() {
 
         <div className="mt-20">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
-              Our Duties
-            </div>
+
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Core Mandate</h3>
             <p className="text-lg text-gray-600">
               KASEDA promotes entrepreneurship, enhances SME competitiveness, builds capacity, facilitates access to finance, and connects businesses to local and international markets.
